@@ -2,55 +2,56 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link href="CSS/style.css" rel = stylesheet>
     <title>DnD Characters</title>
     <meta name="info about characters" content="dnd">
 </head>
 <body>
 
 <header>
-
-
+    <img class="logo_dnd" src="Files/dnd_logo.png">
+    <h1 id="table">Навигация по сайту</h1>
     <nav>
-        <ul>
-            <h1>Навигация по сайту</h1>
 
-            <li><a href="#">Карта мира</a></li>
-            <li><a href="#">Персонажи</a></li>
-            <li><a href="#">Важные инцормация</a></li>
-            <li><a href="#">Игроки</a></li>
+            <a href="#" class="navi_buttons_active">Карта мира</a>
+            <a href="#" class="navi_buttons_active">Персонажи</a>
+            <a href="#" class="navi_buttons_disable">Важная инцормация</a>
+            <a href="#" class="navi_buttons_active">Игроки</a>
 
-        </ul>
     </nav>
 </header>
 
 <main>
 
     <section>
-        <h1>Что будет на сайте</h1>
+        <h2>Что будет на сайте</h2>
 
         <i>Информация про разных персонажей игроков в мире моего dnd мастера.</i>
 
     </section>
 
     <section>
-        <h1>А зачем?</h1>
-
+        <h2>А зачем?</h2>
+        <p>
         Ещё с первой игры я понял - даже с небольшим количеством игроков с ходом времени накапливается внушительное количество персонажей. И если лично мне удавалось их неплохо систематизировать в  ситеме zettelcasten, то у других игроков были с этим некоторые трудности. Кто-то выкидывал листочки, кто-то удалял файлы.
 
         В качестве решения - этот сайт. Также здесь можно будет сохранять основную историю, смешыне истории и прочее
+        </p>
+    </section>
+
+    <section>
+        <h2>Главные персонажи</h2>
+
+                Константин
+                Кан'Дратир
+                Като
 
     </section>
 
     <section>
-        <h1>Главные персонажи</h1>
+        <h2>Смешная ситуация: мы взорвали скелета на фаянцевом троне</h2>
 
-        Константин, Кан'Дратир, Като
-    </section>
 
-    <section>
-        <h2>Смешная ситуация</h2>
-
-        Мы взорвали скелета на фаянцевом троне
         <article>
             (Смешной скелет)
 
@@ -93,7 +94,8 @@
     </section>
 
     <aside>
-        <h4>Коротко DnD:</h4>
+        <h2>Коротко DnD:</h2>
+        <div class="quote">
         <p>
             <q>
                 DM: So you've arrived and been assigned rooms. What are you gonna do?<br>
@@ -104,19 +106,15 @@
                 Me: Go outside and dig in the dirt<br>
                 Friend 5: *sigh* Whatever I need to do to advance the plot *All burst out laughing*<br>
                 DM: Okay so you go into the obviously creepy office like a PROPER adventurer<br>
+                (just test) (H<sub>2</sub>O = life)
             </q>
         </p>
+        </div>
 
-        <h4>Clown juice</h4>
-        <p>
-            makes *wip wip*
-
-            (H<sub>2</sub>O = life)
-        </p>
     </aside>
 
     <section>
-        <h4>Вырезка кода</h4>
+        <h2>Вырезка кода</h2>
 
         <pre><code>
 <strong
@@ -187,11 +185,20 @@
 
 <footer>
     <ul>
-        <h4>Связь</h4>
-        <li><a href="https://t.me/GaussKust">telegram</a></li>
-        <li><a href="https://vk.com/gausskust">vk</a></li>
-        <li><a href="https://github.com/DsiDerInKo">github</a></li>
+        <h2>Связь</h2>
+
+        <li> <img class="logo_tg" src="Files/tg_logo.png"> <a href="https://t.me/GaussKust" class="navi_buttons_active"> telegram</a></li>
+        <li> <img class="logo_vk" src="Files/vk_logo.png"> <a href="https://vk.com/gausskust" class="navi_buttons_active"> vk</a></li>
+        <li> <img class="logo_github" src="Files/github_logo.png"> <a href="https://github.com/DsiDerInKo" class="navi_buttons_active"> github</a></li>
     </ul>
+</footer>
+
+<footer>
+    <div id="fixed">^_^</div>
+</footer>
+
+<footer>
+    <img >
 </footer>
 
 </body>
