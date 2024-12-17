@@ -21,7 +21,6 @@ document.addEventListener('submit', function (e) {
     const diceType = formData.diceType;
     const includeHealth = formData.includeHealth;
 
-    let tableContainer;
     tableContainer.innerHTML = '';
 
     const table = document.createElement('table');

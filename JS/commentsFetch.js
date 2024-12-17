@@ -2,10 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const commentsContainer = document.getElementById('comments_container');
     const preloader = document.getElementById('preloader');
 
+    preloader.style.display = 'block'
     fetchComments();
 
     function fetchComments() {
-        fetch('https://jsonplaceholder.typicode.com/comments?_start=100&_limit=5')
+        fetch('https://jsonplaceholder.typicode.com/comments?_start=100&_limit=10')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
