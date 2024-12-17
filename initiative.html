@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link href="CSS/style.css" rel = stylesheet>
+  <title>DnD Characters</title>
+  <script src="JS/activeLink.js"></script>
+  <script src="JS/pageLoadtime.js"></script>
+  <meta name="info about characters" content="dnd">
+</head>
+<body>
+
+<header>
+  <img class="logo_dnd" src="Files/dnd_logo.png">
+  <h1 id="table">Энциклопедия игрока</h1>
+  <nav>
+
+    <a href="map.html">Карта мира</a>
+    <a href="characters.html">Персонажи</a>
+    <a href="info.html">Важная инцормация</a>
+    <a href="players.html">Игроки</a>
+    <a href="dndCharacters.html" class="active">Общая информация</a>
+    <a href="initiative.html">Таблица инициативы</a>
+
+  </nav>
+</header>
+
+<main>
+
+
+  <br>
+  <h2>Создайте таблицу инициативы для боя</h2>
+
+  <form id="initiativeForm" class="full-width">
+
+    <label for="participants" class="label_style">Количество участников:</label>
+    <input type="number" id="participants" name="participants" min="1" max="20"
+           placeholder="Сколько хочешь, но не больше 20. Монстр..." required class="form-input">
+
+    <br><br>
+
+    <label for="initiativeDice" class="label_style">Тип броска инициативы:</label>
+    <select id="initiativeDice" name="initiativeDice" class="form-input">
+      <option value="d20">d20</option>
+      <option value="d12">d12</option>
+      <option value="d10">d10</option>
+      <option value="d8">d8</option>
+    </select>
+
+    <br><br>
+
+    <label for="includeHealth" class="label_style">Добавить колонку для здоровья?</label>
+    <input type="checkbox" id="includeHealth" name="includeHealth" class="form-checkbox">
+
+    <br><br>
+
+    <button type="submit"  class="big-button">Сгенерировать таблицу</button>
+  </form>
+
+  <div id="tableContainer" class="table-section"></div>
+
+</main>
+
+<footer>
+  <ul>
+    <h2>Связь</h2>
+
+    <li> <img class="logo_tg" src="Files/tg_logo.png"> <a href="https://t.me/GaussKust" class="navi_buttons_active"> telegram</a></li>
+    <li> <img class="logo_vk" src="Files/vk_logo.png"> <a href="https://vk.com/gausskust" class="navi_buttons_active"> vk</a></li>
+    <li> <img class="logo_github" src="Files/github_logo.png"> <a href="https://github.com/DsiDerInKo" class="navi_buttons_active"> github</a></li>
+  </ul>
+</footer>
+
+<footer>
+  <a href="#table">
+    <div id="fixed">Вверх! ^_^</div>
+  </a>
+</footer>
+
+</body>
+</html>

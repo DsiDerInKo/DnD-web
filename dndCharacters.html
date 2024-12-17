@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <link href="CSS/style.css" rel = stylesheet>
     <title>DnD Characters</title>
+    <script src="JS/activeLink.js"></script>
+    <script src="JS/pageLoadtime.js"></script>
     <meta name="info about characters" content="dnd">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
 <header>
     <img class="logo_dnd" src="Files/dnd_logo.png">
-    <h1 id="table">Навигация по сайту</h1>
+    <h1 id="table">Энциклопедия игрока</h1>
     <nav>
 
-            <a href="#" class="navi_buttons_active">Карта мира</a>
-            <a href="#" class="navi_buttons_active">Персонажи</a>
-            <a href="#" class="navi_buttons_disable">Важная инцормация</a>
-            <a href="#" class="navi_buttons_active">Игроки</a>
+            <a href="map.html">Карта мира</a>
+            <a href="characters.html">Персонажи</a>
+            <a href="info.html">Важная информация</a>
+            <a href="players.html">Игроки</a>
+            <a href="dndCharacters.html" class="active">Общая информация</a>
+        <a href="initiative.html">Таблица инициативы</a>
 
     </nav>
 </header>
@@ -26,7 +31,8 @@
     <section>
         <h2>Что будет на сайте</h2>
 
-        <i>Информация про разных персонажей игроков в мире моего dnd мастера.</i>
+        Информация про разных персонажей и игроков в моем мире dnd.
+        dnd - ...
 
     </section>
 
@@ -47,6 +53,14 @@
                 Като
 
     </section>
+
+    <article>
+        <h2>Пример  игры </h2>
+
+        Прибытие в город Карек прошло гладко. Первое утро обещало хороший день - все было тихо, постепенно открывались лавки, недавно торговый караван и начал свою торговлю, а местные барды приготавливали инструменты и горло для долгого дня. А Агни в свою очередь решил остановится и найди заработок на первое время. Но судьба сложилась немного иначе...
+
+        В одном подворотне Агни заметил воришку, который только что обобрал барда. Чувство справедливости дало о себе знать, и после доклада страже она даже поручила это дело Агни. Проследив за этим разбойником, смог попасть в логово, но стал заложником обстоятельств, и его заставили выполнить задание вместе с этим разбойником. Быстрая вылазка в друидский лес привела к тому, что оба подписали договор с Вельзивулом и выполнили задание. Но в самом логове началась бойня бандитов с Белым лотосом, коему Агни помог и дважды спас Алхимика, нарушив закон.
+    </article>
 
     <section>
         <h2>Смешная ситуация: мы взорвали скелета на фаянцевом троне</h2>
@@ -181,6 +195,50 @@
 
     </section>
 
+    <section>
+
+        <h2>Значения характеристик -> бонус</h2>
+        <table>
+            <tr>
+                <td>Значение </td>
+                <td>Бонус</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>-1</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>-1</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>+0</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>+0</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>+1</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>+1</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>+2</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>+2</td>
+            </tr>
+        </table>
+
+    </section>
+
 </main>
 
 <footer>
@@ -194,11 +252,9 @@
 </footer>
 
 <footer>
-    <div id="fixed">^_^</div>
-</footer>
-
-<footer>
-    <img >
+    <a href="#table">
+        <div id="fixed">Вверх! ^_^</div>
+    </a>
 </footer>
 
 </body>
