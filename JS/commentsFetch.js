@@ -5,22 +5,19 @@ document.addEventListener('DOMContentLoaded', () => {
     preloader.style.display = 'block'
     fetchComments();
 
-    function fetchComments() {
-        fetch('https://jsonplaceholder.typicode.com/comments?_start=100&_limit=10')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then(comments => {
-                preloader.style.display = 'none';
-                renderComments(comments);
-            })
-            .catch(error => {
-                preloader.style.display = 'none';
-                showError(error.message);
-            });
+    async function fetchComments() {
+        try {
+            const response = await fetch('https://jsonplaceholder.typicode.com/comments?_start=100&_limit=10');
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            const comments = await response.json();
+            preloader.style.display = 'none';
+            renderComments(comments);
+        } catch (error) {
+            preloader.style.display = 'none';
+            showError(error.message);
+        }
     }
 
     function renderComments(comments) {

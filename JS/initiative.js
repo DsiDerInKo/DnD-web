@@ -27,11 +27,6 @@ document.addEventListener('submit', function (e) {
     table.classList.add('table_section');
 
     const headerRow = document.createElement('tr');
-    //headerRow.innerHTML = `
-    //<th style="width: 40%;">Имя участника</th>
-    //<th style="width: 30%;">Инициатива (${diceType})</th>
-    //  ${includeHealth ? '<th style="width: 30%;">Здоровье</th>' : ''}
-    //`;
     const namePart = document.createElement('th');
     namePart.textContent= 'Имя участника';
     namePart.style.width="40%"
